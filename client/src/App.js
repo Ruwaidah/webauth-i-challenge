@@ -18,7 +18,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Route eaxct path="/" render={props => <Login {...props} />} />
+      <Route exact path="/" render={props => <Login {...props} />} />
       <Route path="/users" render={() => <Users />} />
     </div>
   );
