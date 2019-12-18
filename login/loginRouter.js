@@ -14,8 +14,7 @@ router.post("/", (req, res) => {
           req.session.user = user;
           res.status(200).json({
             message: "user Logged In",
-            user,
-            cookie: req.session.cookie
+            user
           });
         } else {
           res.status(404).json({
