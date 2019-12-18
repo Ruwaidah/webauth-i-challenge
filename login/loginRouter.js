@@ -12,6 +12,7 @@ router.post("/", (req, res) => {
       .then(user => {
         if (user && bcryptjs.compareSync(req.body.password, user.password)) {
           req.session.user = user;
+          console.log(req.session);
           res.status(200).json({
             message: "user Logged In",
             user
