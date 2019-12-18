@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <h1>Wellcom</h1>
-      <Route exact path="/api/login" render={props => <Login {...props} />} />
-      <Route path="/api/users" render={() => <Users />} />
+      <Route exact path="/" render={props => <Login {...props} />} />
+      <Route path="/users" render={() => <Users />} />
     </div>
   );
 }
